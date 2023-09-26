@@ -1,2 +1,2 @@
 # TopForx
-Web for checking forex charts and signing for forex newsletter
+Web application for checking forex charts and signing for forex newsletter
