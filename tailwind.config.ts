@@ -16,9 +16,9 @@ const config: Config = {
       colors:{
         primaryText: '5F5D5C',
         secondaryText: '80ED99',
-        primaryGreenBg: '57CC99'
-        primaryBlueBg: '22577A'
-        secondaryBlueBg:'27CDC1'
+        primaryGreenBg: '57CC99',
+        primaryBlueBg: '22577A',
+        secondaryBlueBg:'27CDC1',
       }
     },
   },
