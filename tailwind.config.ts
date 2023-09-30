@@ -4,7 +4,7 @@ const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/components/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -16,7 +16,7 @@ const config: Config = {
       colors:{
         primaryText: '#5F5D5C',
         secondaryText: '#80ED99',
-        primaryGreenBg: '#57CC99',
+        GreenBg: '#57CC99',
         primaryBlueBg: '#22577a',
         secondaryBlueBg:'#27CDC1',
       }

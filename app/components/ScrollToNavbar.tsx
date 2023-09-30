@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import React from 'react'
 
-const ScrollToNavbar = ({name}) => {
+const ScrollToNavbar = ({ name }) => {
 
     const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
         // first prevent the default behavior
@@ -18,7 +18,7 @@ const ScrollToNavbar = ({name}) => {
       };
 
   return (
-    <Link href={`#${name}`} onClick={handleScroll}>{name}</Link>
+    <Link href={`#${name}`} className='text-center font-lg hover:scale-110 hover:-translate-y-1 hover:text-secondaryText hover:ease-in-out duration-200 delay-100 ' onClick={handleScroll}>{name}</Link>
   )
 }
 
