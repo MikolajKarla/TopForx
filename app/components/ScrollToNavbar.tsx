@@ -18,7 +18,7 @@ const ScrollToNavbar = ({ name }) => {
       };
 
   return (
-    <Link href={`#${name}`} className='text-center font-lg hover:scale-110 hover:-translate-y-1 hover:text-secondaryText hover:ease-in-out duration-200 delay-100 ' onClick={handleScroll}>{name}</Link>
+    <Link href={`#${name}`} className='text-center font-lg hover:scale-110  hover:text-stone-500 hover:ease-in-out duration-200 delay-100 ' onClick={handleScroll}>{name}</Link>
   )
 }
 

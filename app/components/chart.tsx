@@ -1,11 +1,12 @@
 import React from 'react'
+import ChartOption from './ChartOption'
 
-const chart = () => {
+const Chart = () => {
   return (
     <div>
-      
+      <ChartOption/>
     </div>
   )
 }
 
-export default chart
+export default Chart
