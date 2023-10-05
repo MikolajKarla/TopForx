@@ -36,7 +36,7 @@ const About = () => {
     },
   ];
   const [texts, setTexts] = useState(sliderTexts[0]);
-  const changeSlide = (side) => {
+  const changeSlide = (side:any) => {
     let arrSize = sliderTexts.length - 1;
     let arrIndex = sliderTexts.findIndex((item) => item.title === texts.title);
     if (side === "prev") {
@@ -53,10 +53,9 @@ const About = () => {
       }
     }
   };
-  setTimeout(changeSlide,10000)
 
   return (
-    <div id="about" className="py-10 h-max w-full grid grid-cols-6 bg-stone-100 border-y-4 border-stone-600">
+    <div id="about" className="py-4 h-40  w-full grid grid-cols-6 bg-stone-100 border-y-4 border-stone-600">
       <div className="col-span-1 self-center justify-self-end ml-10">
         <ArrowSmallLeftIcon
           id="prev"
@@ -64,11 +63,11 @@ const About = () => {
           onClick={(e) => changeSlide("prev")}
         />
       </div>
-      <div className="col-span-4 text-center">
-        <h2 className="text-2xl">{texts?.title}</h2>
+      <div className="col-span-4 h-2/5 text-center">
+        <h2 className="text-2xl transition">{texts?.title}</h2>
         <p>{texts?.value}</p>
       </div>
-      <div className="col-span-1 self-center mr-10">
+      <div className="col-span-1 self-center">
         <ArrowSmallRightIcon
           className="h-8 w-8 text-black cursor-pointer"
           onClick={(e) => changeSlide("next")}
