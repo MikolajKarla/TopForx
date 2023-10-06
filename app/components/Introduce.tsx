@@ -3,15 +3,12 @@ import Chart from './Chart'
 
 const Introduce = () => {
   return (
-    <div className='grid grid-cols-12 gap-10  px-32 py-10 text-2xl text-stone-700'>
-    <div className="col-span-7 border-2 border-black">
-        <Chart/>
-    </div>
-    <div className="col-span-5 text-end" >
+    <div className=' px-32 py-10 text-2xl text-stone-700'>
     Welcome to TopForX, your premier destination for chart analysis and comprehensive Forex information.
     If you're looking to navigate the dynamic world of foreign exchange trading with confidence and precision,
      you've come to the right place.
-    </div>
+
+     <Chart/>
     </div>
   )
 }
